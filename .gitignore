@@ -1,2 +1,5 @@
-_site/
 .sass-cache/
+npm-debug.log
+node_modules
+.sass-cache
+*.log
