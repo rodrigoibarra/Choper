@@ -1,0 +1,8 @@
+---
+layout: default
+---
+{% for post in site.posts limit:10%}
+    <a href="{{ post.url }}">
+      <img src="{{post.thumbnail}}" alt="{{post.title}}">
+    </a>
+    {% endfor %}
