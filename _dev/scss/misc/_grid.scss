@@ -1,0 +1,27 @@
+.wrap{
+  width:85%;
+  margin:0 auto;
+}
+
+.medio{
+  width:50%;
+  float:left;
+  padding-right:15px;
+
+  &:last-child {
+    padding-right:0;
+  }
+}
+
+.galeria{
+  width:((100% - (2 * 2%)) / 3);
+  margin-right:2%;
+  margin-top:2%;
+  float:left;
+  border: 1px solid $gray;
+  padding:0px;
+
+  &:nth-child(3n){
+    margin-right:0;
+  }
+}

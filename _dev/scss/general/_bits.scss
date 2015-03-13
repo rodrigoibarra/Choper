@@ -1,0 +1,10 @@
+.cf:before, .cf:after { content:""; display:table; }
+.cf:after { clear:both; }
+.cf { zoom:1; } /* For IE 6/7 (trigger hasLayout) */
+
+img{
+  max-width: 100%;
+  height: auto !important;
+}
+
+$gray: gray;
