@@ -112,7 +112,7 @@ img {
   margin-right: 2%;
   margin-top: 2%;
   float: left;
-  border: 1px solid gray;
+  border: 1px solid #939598;
   padding: 0px;
 }
 /* line 24, ../../_dev/scss/misc/_grid.scss */
@@ -122,49 +122,74 @@ img {
 
 /* line 6, ../../_dev/scss/style.scss */
 body {
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
+  font-size: calculateRem(16px);
+  font-weight: 400;
+  color: #939598;
 }
 
-/* line 11, ../../_dev/scss/style.scss */
-a {
+/* line 12, ../../_dev/scss/style.scss */
+a, a:hover, a:active, a:visited {
   text-decoration: none;
+  color: #939598;
 }
 
-/* line 16, ../../_dev/scss/style.scss */
+/* line 18, ../../_dev/scss/style.scss */
 header {
   width: 85%;
   margin: 0 auto;
   padding: 15px 0;
 }
 
-/* line 22, ../../_dev/scss/style.scss */
+/* line 24, ../../_dev/scss/style.scss */
 h1.titulo {
-  font-size: 32px;
-  margin: 2% 0;
+  margin: 15px 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 48px;
+  font-size: calculateRem(48px);
+  font-weight: 700;
 }
-/* line 26, ../../_dev/scss/style.scss */
+/* line 28, ../../_dev/scss/style.scss */
 h1.titulo span {
-  font-family: sans-serif;
-  font-size: 28px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 32px;
+  font-size: calculateRem(32px);
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
-/* line 31, ../../_dev/scss/style.scss */
+/* line 34, ../../_dev/scss/style.scss */
 nav.site-nav {
   border-top: 1px gray solid;
-  border-bottom: 1px gray solid;
+  border-bottom: 1px #939598 solid;
   padding: 15px 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-size: calculateRem(18px);
+  font-weight: 300;
 }
-/* line 36, ../../_dev/scss/style.scss */
+/* line 40, ../../_dev/scss/style.scss */
 nav.site-nav a {
   display: inline-block;
   width: 24.5%;
   text-align: center;
+  text-transform: uppercase;
+}
+/* line 46, ../../_dev/scss/style.scss */
+nav.site-nav a:first-child {
+  text-align: left;
+}
+/* line 49, ../../_dev/scss/style.scss */
+nav.site-nav a:last-child {
+  text-align: right;
 }
 
-/* line 44, ../../_dev/scss/style.scss */
+/* line 55, ../../_dev/scss/style.scss */
 footer {
   width: 85%;
   margin: 15px auto 0 auto;
   padding: 15px 0;
-  border-top: 1px gray solid;
+  border-top: 1px #939598 solid;
 }

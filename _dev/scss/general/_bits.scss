@@ -7,4 +7,15 @@ img{
   height: auto !important;
 }
 
-$gray: gray;
+$gray: #939598;
+
+//light 300
+//normal 400
+//semi bold 600
+//bold 700
+@mixin source-sans($weight, $size) {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: $size;
+  font-size: calculateRem($size);
+  font-weight: $weight;
+}
