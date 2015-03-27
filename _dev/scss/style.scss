@@ -27,25 +27,7 @@ header{
   padding:15px 0;
 }
 
-nav.site-nav{
-  border-top:$line gray solid;
-  border-bottom:$line $gray solid;
-  padding:15px 0;
-  @include source-sans(300, 18px);
-
-  a{
-    display:inline-block;
-    width:(98%/4);
-    text-align:center;
-    text-transform:uppercase;
-  }
-  a:first-child{
-    text-align:left;
-  }
-  a:last-child{
-    text-align: right;
-  }
-}
+@import "misc/navigation";
 
 
 footer{
@@ -53,25 +35,4 @@ footer{
   margin:15px auto 0 auto;
   padding:15px 0;
   border-top: $line $gray solid;
-}
-
-.logo{
-  line-height:40px;
-  img{
-    float:left;
-    width:40px;
-  }
-  p{
-    float:left;
-  }
-
-}
-
-nav.social{
-  position:absolute;
-  right:10%;
-  padding-top:10px;
-  a{
-    display:inline-block;
-  }
 }
