@@ -8,6 +8,12 @@ body{
   color: $gray;
 }
 
+img{
+  width:100%;
+  height:auto !important;
+}
+
+@import "general/type";
 
 a, a:hover, a:active, a:visited{
   text-decoration:none;
@@ -21,19 +27,9 @@ header{
   padding:15px 0;
 }
 
-h1.titulo{
-  margin:15px 0;
-  @include source-sans(700, 48px);
-
- span{
-    @include source-sans(300, 32px);
-    text-transform:uppercase;
-    letter-spacing:5px;
-  }
-}
 nav.site-nav{
-  border-top:1px gray solid;
-  border-bottom:1px $gray solid;
+  border-top:$line gray solid;
+  border-bottom:$line $gray solid;
   padding:15px 0;
   @include source-sans(300, 18px);
 
@@ -56,5 +52,26 @@ footer{
   width:85%;
   margin:15px auto 0 auto;
   padding:15px 0;
-  border-top: 1px $gray solid;
+  border-top: $line $gray solid;
+}
+
+.logo{
+  line-height:40px;
+  img{
+    float:left;
+    width:40px;
+  }
+  p{
+    float:left;
+  }
+
+}
+
+nav.social{
+  position:absolute;
+  right:10%;
+  padding-top:10px;
+  a{
+    display:inline-block;
+  }
 }

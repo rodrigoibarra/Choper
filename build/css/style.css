@@ -99,14 +99,17 @@ img {
 .medio {
   width: 50%;
   float: left;
-  padding-right: 15px;
+  padding-right: 1%;
+  border-left: none;
 }
-/* line 11, ../../_dev/scss/misc/_grid.scss */
+/* line 12, ../../_dev/scss/misc/_grid.scss */
 .medio:last-child {
   padding-right: 0;
+  padding-left: 1%;
+  border-left: 2px solid #939598;
 }
 
-/* line 16, ../../_dev/scss/misc/_grid.scss */
+/* line 19, ../../_dev/scss/misc/_grid.scss */
 .galeria {
   width: 32%;
   margin-right: 2%;
@@ -115,7 +118,7 @@ img {
   border: 1px solid #939598;
   padding: 0px;
 }
-/* line 24, ../../_dev/scss/misc/_grid.scss */
+/* line 27, ../../_dev/scss/misc/_grid.scss */
 .galeria:nth-child(3n) {
   margin-right: 0;
 }
@@ -129,28 +132,23 @@ body {
   color: #939598;
 }
 
-/* line 12, ../../_dev/scss/style.scss */
-a, a:hover, a:active, a:visited {
-  text-decoration: none;
-  color: #939598;
+/* line 11, ../../_dev/scss/style.scss */
+img {
+  width: 100%;
+  height: auto !important;
 }
 
-/* line 18, ../../_dev/scss/style.scss */
-header {
-  width: 85%;
-  margin: 0 auto;
-  padding: 15px 0;
-}
-
-/* line 24, ../../_dev/scss/style.scss */
+/* line 1, ../../_dev/scss/general/_type.scss */
 h1.titulo {
   margin: 15px 0;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 48px;
   font-size: calculateRem(48px);
-  font-weight: 700;
+  font-weight: 400;
+  border-bottom: none;
+  letter-spacing: 5px;
 }
-/* line 28, ../../_dev/scss/style.scss */
+/* line 8, ../../_dev/scss/general/_type.scss */
 h1.titulo span {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 32px;
@@ -160,36 +158,103 @@ h1.titulo span {
   letter-spacing: 5px;
 }
 
-/* line 34, ../../_dev/scss/style.scss */
+/* line 15, ../../_dev/scss/general/_type.scss */
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 36px;
+  font-size: calculateRem(36px);
+  font-weight: 700;
+  border-bottom: 2px solid #939598;
+  margin-bottom: 15px;
+}
+
+/* line 21, ../../_dev/scss/general/_type.scss */
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 28px;
+  font-size: calculateRem(28px);
+  font-weight: 700;
+  border-bottom: 2px solid #939598;
+  margin-bottom: 10px;
+}
+
+/* line 26, ../../_dev/scss/general/_type.scss */
+h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 21px;
+  font-size: calculateRem(21px);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* line 18, ../../_dev/scss/style.scss */
+a, a:hover, a:active, a:visited {
+  text-decoration: none;
+  color: #939598;
+}
+
+/* line 24, ../../_dev/scss/style.scss */
+header {
+  width: 85%;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+/* line 30, ../../_dev/scss/style.scss */
 nav.site-nav {
-  border-top: 1px gray solid;
-  border-bottom: 1px #939598 solid;
+  border-top: 2px gray solid;
+  border-bottom: 2px #939598 solid;
   padding: 15px 0;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
   font-size: calculateRem(18px);
   font-weight: 300;
 }
-/* line 40, ../../_dev/scss/style.scss */
+/* line 36, ../../_dev/scss/style.scss */
 nav.site-nav a {
   display: inline-block;
   width: 24.5%;
   text-align: center;
   text-transform: uppercase;
 }
-/* line 46, ../../_dev/scss/style.scss */
+/* line 42, ../../_dev/scss/style.scss */
 nav.site-nav a:first-child {
   text-align: left;
 }
-/* line 49, ../../_dev/scss/style.scss */
+/* line 45, ../../_dev/scss/style.scss */
 nav.site-nav a:last-child {
   text-align: right;
 }
 
-/* line 55, ../../_dev/scss/style.scss */
+/* line 51, ../../_dev/scss/style.scss */
 footer {
   width: 85%;
   margin: 15px auto 0 auto;
   padding: 15px 0;
-  border-top: 1px #939598 solid;
+  border-top: 2px #939598 solid;
+}
+
+/* line 58, ../../_dev/scss/style.scss */
+.logo {
+  line-height: 40px;
+}
+/* line 60, ../../_dev/scss/style.scss */
+.logo img {
+  float: left;
+  width: 40px;
+}
+/* line 64, ../../_dev/scss/style.scss */
+.logo p {
+  float: left;
+}
+
+/* line 70, ../../_dev/scss/style.scss */
+nav.social {
+  position: absolute;
+  right: 10%;
+  padding-top: 10px;
+}
+/* line 74, ../../_dev/scss/style.scss */
+nav.social a {
+  display: inline-block;
 }
