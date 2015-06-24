@@ -2,13 +2,9 @@
 .cf:after { clear:both; }
 .cf { zoom:1; } /* For IE 6/7 (trigger hasLayout) */
 
-img{
-  max-width: 100%;
-  height: auto !important;
-}
-
 $gray: #939598;
-$line: 1px;
+$line: 2px;
+$border: $line solid lighten($gray, 25%);
 
 //light 300
 //normal 400

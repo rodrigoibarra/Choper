@@ -14,14 +14,13 @@ h1.titulo{
 
 h1{
   @include source-sans(700, 36px);
-  border-bottom:$line solid $gray;
+  border-bottom:$border;
   margin-bottom:15px;
 }
 
 h2{
   @include source-sans(700, 28px);
-  border-bottom:$line solid $gray;
-  margin-bottom:10px;
+  margin:15px 0;
 }
 h3{
   @include source-sans(700, 21px);

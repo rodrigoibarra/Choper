@@ -1,6 +1,6 @@
 nav.site-nav{
-  border-top:$line gray solid;
-  border-bottom:$line $gray solid;
+  border-top:$border;
+  border-bottom:$border;
   padding:15px 0;
   @include source-sans(300, 18px);
 
