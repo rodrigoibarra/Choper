@@ -2,7 +2,8 @@ h1.titulo{
   margin:15px 0;
   @include source-sans(400, 38px);
   border-bottom:none;
-  letter-spacing:5px;
+  letter-spacing:3px;
+  line-height: 36px;
   text-transform: uppercase;
 
 
