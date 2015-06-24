@@ -12,7 +12,7 @@
   &:last-child {
     padding-right:0;
     padding-left: 1%;
-    border-left: $line solid $gray;
+    border-left: $border;
   }
 }
 
@@ -21,7 +21,7 @@
   margin-right:2%;
   margin-top:2%;
   float:left;
-  border: 1px solid $gray;
+  border: $border;
   padding:0px;
 
   &:nth-child(3n){
