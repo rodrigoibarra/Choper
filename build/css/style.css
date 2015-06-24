@@ -326,13 +326,14 @@ img {
 h1.titulo {
   margin: 15px 0;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 48px;
-  font-size: calculateRem(48px);
+  font-size: 38px;
+  font-size: calculateRem(38px);
   font-weight: 400;
   border-bottom: none;
   letter-spacing: 5px;
+  text-transform: uppercase;
 }
-/* line 8, ../../_dev/scss/general/_type.scss */
+/* line 9, ../../_dev/scss/general/_type.scss */
 h1.titulo span {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 32px;
@@ -342,7 +343,7 @@ h1.titulo span {
   letter-spacing: 5px;
 }
 
-/* line 15, ../../_dev/scss/general/_type.scss */
+/* line 16, ../../_dev/scss/general/_type.scss */
 h1 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 36px;
@@ -352,7 +353,7 @@ h1 {
   margin-bottom: 15px;
 }
 
-/* line 21, ../../_dev/scss/general/_type.scss */
+/* line 22, ../../_dev/scss/general/_type.scss */
 h2 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 28px;
@@ -361,7 +362,7 @@ h2 {
   margin: 15px 0;
 }
 
-/* line 25, ../../_dev/scss/general/_type.scss */
+/* line 26, ../../_dev/scss/general/_type.scss */
 h3 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 21px;

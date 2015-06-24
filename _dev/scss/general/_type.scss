@@ -1,8 +1,9 @@
 h1.titulo{
   margin:15px 0;
-  @include source-sans(400, 48px);
+  @include source-sans(400, 38px);
   border-bottom:none;
   letter-spacing:5px;
+  text-transform: uppercase;
 
 
  span{
