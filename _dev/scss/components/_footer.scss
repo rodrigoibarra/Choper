@@ -1,0 +1,30 @@
+footer{
+  width:85%;
+  margin:15px auto 0 auto;
+  padding:15px 0;
+  border-top: $line $gray solid;
+}
+
+.logo{
+  line-height:40px;
+  img{
+    float:left;
+    width:40px;
+  }
+  p{
+    float:left;
+  }
+
+    @include breakpoint(baby-bear) {
+
+    }
+
+}
+
+nav.social{
+  right:10%;
+  padding-top:10px;
+  a{
+    display:inline-block;
+  }
+}

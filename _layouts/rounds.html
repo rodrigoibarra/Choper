@@ -1,8 +1,22 @@
 {% include doctype.html %}
 {% include header.html %}
-  <div class="wrap">
-
-    {{content}}
+<div class="wrap">
+  <section class="cf">
+    <div class="tercios-2">
+        <img src="{{page.image}}" alt="{{page.title}}">
+    </div>
+    <div class="tercio rounds">
+        {{content}}
+        <div class="cf post-nav">
+          {% if page.next.url %}
+            <a class="next" href="{{page.next.url}}">&laquo;{{page.next.title}} | </a>
+          {% endif %}
+          {% if page.previous.url %}
+            <a class="prev" href="{{page.previous.url}}">{{page.previous.title}} &raquo;</a>
+          {% endif %}
 
   </div>
+    </div>
+  </section>
+</div>
   {% include footer.html %}

@@ -1,0 +1,89 @@
+nav.site-nav{
+  padding:5px 0;
+  border-top:$border;
+  border-bottom:$border;
+  @include source-sans(300, 16px);
+
+/*Strip the ul of padding and list styling*/
+ul {
+	list-style-type:none;
+  width: 100%;
+	padding:0;
+}
+
+/*Create a horizontal list with spacing*/
+
+li {
+  display:inline-block;
+  float:left;;
+  width:(98%/4);
+  text-align:center;
+  text-transform:uppercase;
+  border-bottom:none;
+}
+
+li:first-child{
+  text-align:left;
+}
+li:last-child{
+  text-align: right;
+}
+
+/*Style for menu links*/
+li a {
+	display:block;
+	min-width:140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	text-decoration: none;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+/*Responsive Styles*/
+
+  @include breakpoint(baby-bear) {
+	/*Make dropdown links appear inline*/
+	ul {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	li {
+		margin-bottom: 1px;
+    border-bottom:$border;
+  }
+  li:first-child{
+      border-top:$border;
+      text-align: center;
+  }
+  li:last-child{
+    border-bottom: none;
+    text-align: center;
+  }
+	/*Make all menu links full width*/
+	ul li, li a {
+		width: 100%;
+	}
+  /*Display 'show menu' link*/
+  .show-menu {
+    display:block;
+    }
+  }
+}

@@ -6,16 +6,32 @@
 .medio{
   width:50%;
   float:left;
-  padding-right:1%;
+  padding:0 1% 0 0;
   border-left: none;
 
-  &:last-child {
-    padding-right:0;
-    padding-left: 1%;
-    border-left: $border;
-  }
-}
 
+  &:last-child {
+    padding: 0 0 0 1%;
+    border-left: $border;
+    margin: 0;
+  }
+
+    @include breakpoint(baby-bear) {
+      width:100%;
+      float:left;
+      padding:5% 0 0 0;
+      border-left: none;
+      border-top: none;
+
+      &:last-child {
+        padding-right:0;
+        padding-left: 1%;
+        border-left: none;
+        border-top: $border;
+        margin: 5% 0 0 0;
+      }
+    }
+}
 .galeria{
   width:((100% - (2 * 2%)) / 3);
   margin-right:2%;
@@ -27,4 +43,34 @@
   &:nth-child(3n){
     margin-right:0;
   }
+  @include breakpoint(reverso-baby-bear) {
+      width:((100% - (2 * 2%)) / 2);
+      &:nth-child(odd){
+        margin-right:2%;
+      }
+  }
+
+}
+.tercios-2{
+  width:75%;
+  float:left;
+  padding:0 5% 0 0;
+
+  @include breakpoint(baby-bear) {
+        width: 100%;
+        padding:0;
+      }
+}
+
+.tercio {
+  width: 23%;
+  padding:25% 0 0 0;
+  float: left;
+    text-align: center;
+
+  @include breakpoint(baby-bear) {
+        width: 100%;
+          padding:5% 0 0 0;
+      }
+
 }

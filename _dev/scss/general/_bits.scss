@@ -6,6 +6,14 @@ $gray: #939598;
 $line: 2px;
 $border: $line solid lighten($gray, 25%);
 
+
+.btn{
+  padding:1%;
+  margin: 1%;
+  position: relative;
+  left: 35%;
+}
+
 //light 300
 //normal 400
 //semi bold 600
@@ -22,12 +30,9 @@ $border: $line solid lighten($gray, 25%);
     @media (max-width: 1250px) { @content; }
   }
   @if $point == baby-bear {
-    @media (max-width: 700px) { @content; }
+    @media (max-width: 570px) { @content; }
   }
   @if $point == reverso-baby-bear {
-    @media (min-width: 700px) { @content; }
-  }
-  @if $point == reverso-mama-bear {
-    @media (min-width: 1250px) { @content; }
+    @media (max-width: 700px) { @content; }
   }
 }

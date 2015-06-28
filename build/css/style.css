@@ -83,6 +83,14 @@ table {
 }
 
 /* For IE 6/7 (trigger hasLayout) */
+/* line 10, ../../_dev/scss/general/_bits.scss */
+.btn {
+  padding: 1%;
+  margin: 1%;
+  position: relative;
+  left: 35%;
+}
+
 /* line 1, ../../_dev/scss/misc/_grid.scss */
 .wrap {
   width: 85%;
@@ -93,17 +101,35 @@ table {
 .medio {
   width: 50%;
   float: left;
-  padding-right: 1%;
+  padding: 0 1% 0 0;
   border-left: none;
 }
-/* line 12, ../../_dev/scss/misc/_grid.scss */
+/* line 13, ../../_dev/scss/misc/_grid.scss */
 .medio:last-child {
-  padding-right: 0;
-  padding-left: 1%;
+  padding: 0 0 0 1%;
   border-left: 2px solid #d4d5d6;
+  margin: 0;
+}
+@media (max-width: 570px) {
+  /* line 6, ../../_dev/scss/misc/_grid.scss */
+  .medio {
+    width: 100%;
+    float: left;
+    padding: 5% 0 0 0;
+    border-left: none;
+    border-top: none;
+  }
+  /* line 26, ../../_dev/scss/misc/_grid.scss */
+  .medio:last-child {
+    padding-right: 0;
+    padding-left: 1%;
+    border-left: none;
+    border-top: 2px solid #d4d5d6;
+    margin: 5% 0 0 0;
+  }
 }
 
-/* line 19, ../../_dev/scss/misc/_grid.scss */
+/* line 35, ../../_dev/scss/misc/_grid.scss */
 .galeria {
   width: 32%;
   margin-right: 2%;
@@ -112,9 +138,98 @@ table {
   border: 2px solid #d4d5d6;
   padding: 0px;
 }
-/* line 27, ../../_dev/scss/misc/_grid.scss */
+/* line 43, ../../_dev/scss/misc/_grid.scss */
 .galeria:nth-child(3n) {
   margin-right: 0;
+}
+@media (max-width: 700px) {
+  /* line 35, ../../_dev/scss/misc/_grid.scss */
+  .galeria {
+    width: 48%;
+  }
+  /* line 48, ../../_dev/scss/misc/_grid.scss */
+  .galeria:nth-child(odd) {
+    margin-right: 2%;
+  }
+}
+
+/* line 54, ../../_dev/scss/misc/_grid.scss */
+.tercios-2 {
+  width: 75%;
+  float: left;
+  padding: 0 5% 0 0;
+}
+@media (max-width: 570px) {
+  /* line 54, ../../_dev/scss/misc/_grid.scss */
+  .tercios-2 {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* line 65, ../../_dev/scss/misc/_grid.scss */
+.tercio {
+  width: 23%;
+  padding: 25% 0 0 0;
+  float: left;
+  text-align: center;
+}
+@media (max-width: 570px) {
+  /* line 65, ../../_dev/scss/misc/_grid.scss */
+  .tercio {
+    width: 100%;
+    padding: 5% 0 0 0;
+  }
+}
+
+/* line 1, ../../_dev/scss/misc/_type.scss */
+h1.titulo {
+  margin: 15px 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 38px;
+  font-size: calculateRem(38px);
+  font-weight: 400;
+  border-bottom: none;
+  letter-spacing: 3px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+/* line 10, ../../_dev/scss/misc/_type.scss */
+h1.titulo span {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 32px;
+  font-size: calculateRem(32px);
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+/* line 17, ../../_dev/scss/misc/_type.scss */
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 36px;
+  font-size: calculateRem(36px);
+  font-weight: 700;
+  border-bottom: 2px solid #d4d5d6;
+  margin-bottom: 15px;
+}
+
+/* line 23, ../../_dev/scss/misc/_type.scss */
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 28px;
+  font-size: calculateRem(28px);
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+/* line 27, ../../_dev/scss/misc/_type.scss */
+h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 21px;
+  font-size: calculateRem(21px);
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
 /*! Flickity v1.0.2
@@ -304,25 +419,26 @@ body {
   color: #939598;
 }
 
-/* line 14, ../../_dev/scss/style.scss */
+/* line 13, ../../_dev/scss/style.scss */
 img {
   width: 100%;
   height: auto;
 }
 
-/* line 19, ../../_dev/scss/style.scss */
-.gallery img {
-  display: block;
-  width: auto;
-  height: 400px;
+/* line 18, ../../_dev/scss/style.scss */
+a, a:hover, a:active, a:visited {
+  text-decoration: none;
+  color: #939598;
 }
 
-/* line 25, ../../_dev/scss/style.scss */
-.gallery {
-  margin-bottom: 45px;
+/* line 1, ../../_dev/scss/components/_header.scss */
+header {
+  width: 85%;
+  margin: 0 auto;
+  padding: 15px 0;
 }
 
-/* line 1, ../../_dev/scss/general/_type.scss */
+/* line 8, ../../_dev/scss/components/_header.scss */
 h1.titulo {
   margin: 15px 0;
   font-family: 'Source Sans Pro', sans-serif;
@@ -334,7 +450,7 @@ h1.titulo {
   line-height: 36px;
   text-transform: uppercase;
 }
-/* line 10, ../../_dev/scss/general/_type.scss */
+/* line 17, ../../_dev/scss/components/_header.scss */
 h1.titulo span {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 32px;
@@ -344,56 +460,7 @@ h1.titulo span {
   letter-spacing: 5px;
 }
 
-/* line 17, ../../_dev/scss/general/_type.scss */
-h1 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 36px;
-  font-size: calculateRem(36px);
-  font-weight: 700;
-  border-bottom: 2px solid #d4d5d6;
-  margin-bottom: 15px;
-}
-
-/* line 23, ../../_dev/scss/general/_type.scss */
-h2 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 28px;
-  font-size: calculateRem(28px);
-  font-weight: 700;
-  margin: 15px 0;
-}
-
-/* line 27, ../../_dev/scss/general/_type.scss */
-h3 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 21px;
-  font-size: calculateRem(21px);
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-/* line 32, ../../_dev/scss/style.scss */
-a, a:hover, a:active, a:visited {
-  text-decoration: none;
-  color: #939598;
-}
-
-/* line 37, ../../_dev/scss/style.scss */
-.btn {
-  padding: 1%;
-  margin: 1%;
-  position: relative;
-  left: 35%;
-}
-
-/* line 44, ../../_dev/scss/style.scss */
-header {
-  width: 85%;
-  margin: 0 auto;
-  padding: 15px 0;
-}
-
-/* line 1, ../../_dev/scss/misc/_navigation.scss */
+/* line 1, ../../_dev/scss/components/_navigation.scss */
 nav.site-nav {
   padding: 5px 0;
   border-top: 2px solid #d4d5d6;
@@ -402,19 +469,22 @@ nav.site-nav {
   font-size: 16px;
   font-size: calculateRem(16px);
   font-weight: 300;
+  /*Strip the ul of padding and list styling*/
+  /*Create a horizontal list with spacing*/
+  /*Style for menu links*/
+  /*Style 'show menu' label button and hide it by default*/
+  /*Hide checkbox*/
+  /*Show menu when invisible checkbox is checked*/
+  /*Responsive Styles*/
 }
-
-/*Strip the ul of padding and list styling*/
-/* line 10, ../../_dev/scss/misc/_navigation.scss */
-ul {
+/* line 8, ../../_dev/scss/components/_navigation.scss */
+nav.site-nav ul {
   list-style-type: none;
   width: 100%;
   padding: 0;
 }
-
-/*Create a horizontal list with spacing*/
-/* line 18, ../../_dev/scss/misc/_navigation.scss */
-li {
+/* line 16, ../../_dev/scss/components/_navigation.scss */
+nav.site-nav li {
   display: inline-block;
   float: left;
   width: 24.5%;
@@ -422,20 +492,16 @@ li {
   text-transform: uppercase;
   border-bottom: none;
 }
-
-/* line 27, ../../_dev/scss/misc/_navigation.scss */
-li:first-child {
+/* line 25, ../../_dev/scss/components/_navigation.scss */
+nav.site-nav li:first-child {
   text-align: left;
 }
-
-/* line 30, ../../_dev/scss/misc/_navigation.scss */
-li:last-child {
+/* line 28, ../../_dev/scss/components/_navigation.scss */
+nav.site-nav li:last-child {
   text-align: right;
 }
-
-/*Style for menu links*/
-/* line 35, ../../_dev/scss/misc/_navigation.scss */
-li a {
+/* line 33, ../../_dev/scss/components/_navigation.scss */
+nav.site-nav li a {
   display: block;
   min-width: 140px;
   height: 50px;
@@ -443,95 +509,105 @@ li a {
   line-height: 50px;
   text-decoration: none;
 }
-
-/*Style 'show menu' label button and hide it by default*/
-/* line 45, ../../_dev/scss/misc/_navigation.scss */
-.show-menu {
+/* line 43, ../../_dev/scss/components/_navigation.scss */
+nav.site-nav .show-menu {
   text-align: center;
   padding: 10px 0;
   display: none;
 }
-
-/*Hide checkbox*/
-/* line 52, ../../_dev/scss/misc/_navigation.scss */
-input[type=checkbox] {
+/* line 50, ../../_dev/scss/components/_navigation.scss */
+nav.site-nav input[type=checkbox] {
   display: none;
 }
-
-/*Show menu when invisible checkbox is checked*/
-/* line 57, ../../_dev/scss/misc/_navigation.scss */
-input[type=checkbox]:checked ~ #menu {
+/* line 55, ../../_dev/scss/components/_navigation.scss */
+nav.site-nav input[type=checkbox]:checked ~ #menu {
   display: block;
 }
-
-/*Responsive Styles*/
-@media screen and (max-width: 760px) {
-  /*Make dropdown links appear inline*/
-  /* line 65, ../../_dev/scss/misc/_navigation.scss */
-  ul {
+@media (max-width: 570px) {
+  /* line 1, ../../_dev/scss/components/_navigation.scss */
+  nav.site-nav {
+    /*Make dropdown links appear inline*/
+    /*Create vertical spacing*/
+    /*Make all menu links full width*/
+    /*Display 'show menu' link*/
+  }
+  /* line 63, ../../_dev/scss/components/_navigation.scss */
+  nav.site-nav ul {
     position: static;
     display: none;
   }
-
-  /*Create vertical spacing*/
-  /* line 70, ../../_dev/scss/misc/_navigation.scss */
-  li {
+  /* line 68, ../../_dev/scss/components/_navigation.scss */
+  nav.site-nav li {
     margin-bottom: 1px;
     border-bottom: 2px solid #d4d5d6;
   }
-
-  /* line 74, ../../_dev/scss/misc/_navigation.scss */
-  li:first-child {
+  /* line 72, ../../_dev/scss/components/_navigation.scss */
+  nav.site-nav li:first-child {
     border-top: 2px solid #d4d5d6;
     text-align: center;
   }
-
-  /* line 78, ../../_dev/scss/misc/_navigation.scss */
-  li:last-child {
+  /* line 76, ../../_dev/scss/components/_navigation.scss */
+  nav.site-nav li:last-child {
     border-bottom: none;
     text-align: center;
   }
-
-  /*Make all menu links full width*/
-  /* line 83, ../../_dev/scss/misc/_navigation.scss */
-  ul li, li a {
+  /* line 81, ../../_dev/scss/components/_navigation.scss */
+  nav.site-nav ul li, nav.site-nav li a {
     width: 100%;
   }
-
-  /*Display 'show menu' link*/
-  /* line 87, ../../_dev/scss/misc/_navigation.scss */
-  .show-menu {
+  /* line 85, ../../_dev/scss/components/_navigation.scss */
+  nav.site-nav .show-menu {
     display: block;
   }
 }
-/* line 92, ../../_dev/scss/misc/_navigation.scss */
-.logo {
-  line-height: 40px;
-}
-/* line 94, ../../_dev/scss/misc/_navigation.scss */
-.logo img {
-  float: left;
-  width: 40px;
-}
-/* line 98, ../../_dev/scss/misc/_navigation.scss */
-.logo p {
-  float: left;
+
+/* line 2, ../../_dev/scss/components/_rounds.scss */
+.gallery img {
+  display: block;
+  width: auto;
+  height: 400px;
 }
 
-/* line 104, ../../_dev/scss/misc/_navigation.scss */
-nav.social {
-  right: 10%;
-  padding-top: 10px;
-}
-/* line 107, ../../_dev/scss/misc/_navigation.scss */
-nav.social a {
-  display: inline-block;
+/* line 8, ../../_dev/scss/components/_rounds.scss */
+.gallery {
+  margin-bottom: 45px;
 }
 
-/* line 53, ../../_dev/scss/style.scss */
+/* line 12, ../../_dev/scss/components/_rounds.scss */
+.post-nav {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 12px;
+}
+
+/* line 1, ../../_dev/scss/components/_footer.scss */
 footer {
   width: 85%;
   margin: 15px auto 0 auto;
   padding: 15px 0;
   border-top: 2px #939598 solid;
+}
+
+/* line 8, ../../_dev/scss/components/_footer.scss */
+.logo {
+  line-height: 40px;
+}
+/* line 10, ../../_dev/scss/components/_footer.scss */
+.logo img {
+  float: left;
+  width: 40px;
+}
+/* line 14, ../../_dev/scss/components/_footer.scss */
+.logo p {
+  float: left;
+}
+
+/* line 24, ../../_dev/scss/components/_footer.scss */
+nav.social {
+  right: 10%;
+  padding-top: 10px;
+}
+/* line 27, ../../_dev/scss/components/_footer.scss */
+nav.social a {
+  display: inline-block;
 }

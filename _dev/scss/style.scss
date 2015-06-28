@@ -2,57 +2,25 @@
 @import "general/reset";
 @import "general/bits";
 @import "misc/grid";
+@import "misc/type";
 @import "misc/slider";
-
 
 body{
   @include source-sans(400, 16px);
   color: $gray;
 }
 
-
 img{
   width: 100%;
   height: auto;
 }
-
-.gallery img {
-  display: block;
-  width: auto;
-  height: 400px;
-}
-
-.gallery {
-  margin-bottom: 45px;
-}
-
-
-@import "general/type";
 
 a, a:hover, a:active, a:visited{
   text-decoration:none;
   color: $gray;
 }
 
-.btn{
-  padding:1%;
-  margin: 1%;
-  position: relative;
-  left: 35%;
-}
-
-header{
-  width:85%;
-  margin:0 auto;
-  padding:15px 0;
-}
-
-@import "misc/navigation";
-
-
-footer{
-  width:85%;
-  margin:15px auto 0 auto;
-  padding:15px 0;
-  border-top: $line $gray solid;
-}
+@import "components/header";
+@import "components/navigation";
+@import "components/rounds";
+@import "components/footer";
