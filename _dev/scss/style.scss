@@ -5,20 +5,12 @@
 @import "misc/type";
 @import "misc/slider";
 
-body{
-  @include source-sans(400, 16px);
-  color: $gray;
-}
 
 img{
   width: 100%;
   height: auto;
 }
 
-a, a:hover, a:active, a:visited{
-  text-decoration:none;
-  color: $gray;
-}
 
 @import "components/header";
 @import "components/navigation";

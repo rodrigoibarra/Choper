@@ -1,30 +1,36 @@
-h1.titulo{
-  margin:15px 0;
-  @include source-sans(400, 38px);
-  border-bottom:none;
-  letter-spacing:3px;
-  line-height: 36px;
-  text-transform: uppercase;
-
-
- span{
-    @include source-sans(300, 32px);
-    text-transform:uppercase;
-    letter-spacing:5px;
-  }
-}
-
 h1{
   @include source-sans(700, 36px);
   border-bottom:$border;
   margin-bottom:15px;
+
+    @include breakpoint(baby-bear) {
+        @include source-sans(700, 28px);
+    }
 }
 
 h2{
   @include source-sans(700, 28px);
   margin:15px 0;
+  @include breakpoint(baby-bear) {
+      @include source-sans(300, 22px);
+  }
 }
 h3{
-  @include source-sans(700, 21px);
+  @include source-sans(700, 19px);
   margin-bottom:15px;
+  @include breakpoint(baby-bear) {
+      @include source-sans(700, 36px);
+  }
+}
+
+body{
+  font-size: 18px;
+  line-height:1.5;
+  @include source-sans(400, 16px);
+  color:$gray;
+}
+
+a, a:hover, a:active, a:visited{
+  text-decoration:none;
+  color: $gray;
 }
