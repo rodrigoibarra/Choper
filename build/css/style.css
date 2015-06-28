@@ -395,51 +395,135 @@ header {
 
 /* line 1, ../../_dev/scss/misc/_navigation.scss */
 nav.site-nav {
+  padding: 5px 0;
   border-top: 2px solid #d4d5d6;
   border-bottom: 2px solid #d4d5d6;
-  padding: 15px 0;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
-  font-size: calculateRem(18px);
+  font-size: 16px;
+  font-size: calculateRem(16px);
   font-weight: 300;
 }
-/* line 7, ../../_dev/scss/misc/_navigation.scss */
-nav.site-nav a {
+
+/*Strip the ul of padding and list styling*/
+/* line 10, ../../_dev/scss/misc/_navigation.scss */
+ul {
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+}
+
+/*Create a horizontal list with spacing*/
+/* line 18, ../../_dev/scss/misc/_navigation.scss */
+li {
   display: inline-block;
+  float: left;
   width: 24.5%;
   text-align: center;
   text-transform: uppercase;
+  border-bottom: none;
 }
-/* line 13, ../../_dev/scss/misc/_navigation.scss */
-nav.site-nav a:first-child {
+
+/* line 27, ../../_dev/scss/misc/_navigation.scss */
+li:first-child {
   text-align: left;
 }
-/* line 16, ../../_dev/scss/misc/_navigation.scss */
-nav.site-nav a:last-child {
+
+/* line 30, ../../_dev/scss/misc/_navigation.scss */
+li:last-child {
   text-align: right;
 }
 
-/* line 21, ../../_dev/scss/misc/_navigation.scss */
+/*Style for menu links*/
+/* line 35, ../../_dev/scss/misc/_navigation.scss */
+li a {
+  display: block;
+  min-width: 140px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+/* line 45, ../../_dev/scss/misc/_navigation.scss */
+.show-menu {
+  text-align: center;
+  padding: 10px 0;
+  display: none;
+}
+
+/*Hide checkbox*/
+/* line 52, ../../_dev/scss/misc/_navigation.scss */
+input[type=checkbox] {
+  display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+/* line 57, ../../_dev/scss/misc/_navigation.scss */
+input[type=checkbox]:checked ~ #menu {
+  display: block;
+}
+
+/*Responsive Styles*/
+@media screen and (max-width: 760px) {
+  /*Make dropdown links appear inline*/
+  /* line 65, ../../_dev/scss/misc/_navigation.scss */
+  ul {
+    position: static;
+    display: none;
+  }
+
+  /*Create vertical spacing*/
+  /* line 70, ../../_dev/scss/misc/_navigation.scss */
+  li {
+    margin-bottom: 1px;
+    border-bottom: 2px solid #d4d5d6;
+  }
+
+  /* line 74, ../../_dev/scss/misc/_navigation.scss */
+  li:first-child {
+    border-top: 2px solid #d4d5d6;
+    text-align: center;
+  }
+
+  /* line 78, ../../_dev/scss/misc/_navigation.scss */
+  li:last-child {
+    border-bottom: none;
+    text-align: center;
+  }
+
+  /*Make all menu links full width*/
+  /* line 83, ../../_dev/scss/misc/_navigation.scss */
+  ul li, li a {
+    width: 100%;
+  }
+
+  /*Display 'show menu' link*/
+  /* line 87, ../../_dev/scss/misc/_navigation.scss */
+  .show-menu {
+    display: block;
+  }
+}
+/* line 92, ../../_dev/scss/misc/_navigation.scss */
 .logo {
   line-height: 40px;
 }
-/* line 23, ../../_dev/scss/misc/_navigation.scss */
+/* line 94, ../../_dev/scss/misc/_navigation.scss */
 .logo img {
   float: left;
   width: 40px;
 }
-/* line 27, ../../_dev/scss/misc/_navigation.scss */
+/* line 98, ../../_dev/scss/misc/_navigation.scss */
 .logo p {
   float: left;
 }
 
-/* line 33, ../../_dev/scss/misc/_navigation.scss */
+/* line 104, ../../_dev/scss/misc/_navigation.scss */
 nav.social {
-  position: absolute;
   right: 10%;
   padding-top: 10px;
 }
-/* line 37, ../../_dev/scss/misc/_navigation.scss */
+/* line 107, ../../_dev/scss/misc/_navigation.scss */
 nav.social a {
   display: inline-block;
 }
