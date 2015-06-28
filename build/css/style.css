@@ -222,8 +222,8 @@ h2 {
 /* line 18, ../../_dev/scss/misc/_type.scss */
 h3 {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 19px;
-  font-size: calculateRem(19px);
+  font-size: 21px;
+  font-size: calculateRem(21px);
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -231,8 +231,8 @@ h3 {
   /* line 18, ../../_dev/scss/misc/_type.scss */
   h3 {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 36px;
-    font-size: calculateRem(36px);
+    font-size: 19px;
+    font-size: calculateRem(19px);
     font-weight: 700;
   }
 }
@@ -631,12 +631,19 @@ footer {
   float: left;
 }
 
-/* line 24, ../../_dev/scss/components/_footer.scss */
+/* line 20, ../../_dev/scss/components/_footer.scss */
 nav.social {
+  position: absolute;
   right: 10%;
   padding-top: 10px;
 }
-/* line 27, ../../_dev/scss/components/_footer.scss */
+/* line 24, ../../_dev/scss/components/_footer.scss */
 nav.social a {
   display: inline-block;
+}
+@media (max-width: 570px) {
+  /* line 20, ../../_dev/scss/components/_footer.scss */
+  nav.social {
+    font-size: 12px;
+  }
 }

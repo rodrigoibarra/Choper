@@ -16,10 +16,10 @@ h2{
   }
 }
 h3{
-  @include source-sans(700, 19px);
+  @include source-sans(700, 21px);
   margin-bottom:15px;
   @include breakpoint(baby-bear) {
-      @include source-sans(700, 36px);
+      @include source-sans(700, 19px);
   }
 }
 
