@@ -11,6 +11,12 @@ img{
   height: auto;
 }
 
+img.profile{
+  width:50%;
+  position: relative;
+  left:25%;
+  border-radius: 50%;
+}
 
 @import "components/header";
 @import "components/navigation";

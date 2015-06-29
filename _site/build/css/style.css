@@ -98,20 +98,32 @@ table {
 }
 
 /* line 6, ../../_dev/scss/misc/_grid.scss */
+.uno {
+  width: 50%;
+  margin: 0 auto;
+}
+@media (max-width: 570px) {
+  /* line 6, ../../_dev/scss/misc/_grid.scss */
+  .uno {
+    width: 85%;
+  }
+}
+
+/* line 14, ../../_dev/scss/misc/_grid.scss */
 .medio {
   width: 50%;
   float: left;
   padding: 0 1% 0 0;
   border-left: none;
 }
-/* line 13, ../../_dev/scss/misc/_grid.scss */
+/* line 21, ../../_dev/scss/misc/_grid.scss */
 .medio:last-child {
   padding: 0 0 0 1%;
   border-left: 2px solid #d4d5d6;
   margin: 0;
 }
 @media (max-width: 570px) {
-  /* line 6, ../../_dev/scss/misc/_grid.scss */
+  /* line 14, ../../_dev/scss/misc/_grid.scss */
   .medio {
     width: 100%;
     float: left;
@@ -119,7 +131,7 @@ table {
     border-left: none;
     border-top: none;
   }
-  /* line 26, ../../_dev/scss/misc/_grid.scss */
+  /* line 34, ../../_dev/scss/misc/_grid.scss */
   .medio:last-child {
     padding-right: 0;
     padding-left: 1%;
@@ -129,7 +141,7 @@ table {
   }
 }
 
-/* line 35, ../../_dev/scss/misc/_grid.scss */
+/* line 43, ../../_dev/scss/misc/_grid.scss */
 .galeria {
   width: 32%;
   margin-right: 2%;
@@ -138,36 +150,36 @@ table {
   border: 2px solid #d4d5d6;
   padding: 0px;
 }
-/* line 43, ../../_dev/scss/misc/_grid.scss */
+/* line 51, ../../_dev/scss/misc/_grid.scss */
 .galeria:nth-child(3n) {
   margin-right: 0;
 }
 @media (max-width: 700px) {
-  /* line 35, ../../_dev/scss/misc/_grid.scss */
+  /* line 43, ../../_dev/scss/misc/_grid.scss */
   .galeria {
     width: 48%;
   }
-  /* line 48, ../../_dev/scss/misc/_grid.scss */
+  /* line 56, ../../_dev/scss/misc/_grid.scss */
   .galeria:nth-child(odd) {
     margin-right: 2%;
   }
 }
 
-/* line 54, ../../_dev/scss/misc/_grid.scss */
+/* line 62, ../../_dev/scss/misc/_grid.scss */
 .tercios-2 {
   width: 75%;
   float: left;
   padding: 0 5% 0 0;
 }
 @media (max-width: 570px) {
-  /* line 54, ../../_dev/scss/misc/_grid.scss */
+  /* line 62, ../../_dev/scss/misc/_grid.scss */
   .tercios-2 {
     width: 100%;
     padding: 0;
   }
 }
 
-/* line 65, ../../_dev/scss/misc/_grid.scss */
+/* line 73, ../../_dev/scss/misc/_grid.scss */
 .tercio {
   width: 23%;
   padding: 25% 0 0 0;
@@ -175,7 +187,7 @@ table {
   text-align: center;
 }
 @media (max-width: 570px) {
-  /* line 65, ../../_dev/scss/misc/_grid.scss */
+  /* line 73, ../../_dev/scss/misc/_grid.scss */
   .tercio {
     width: 100%;
     padding: 5% 0 0 0;
@@ -457,6 +469,14 @@ http://flickity.metafizzy.co
 img {
   width: 100%;
   height: auto;
+}
+
+/* line 14, ../../_dev/scss/style.scss */
+img.profile {
+  width: 50%;
+  position: relative;
+  left: 25%;
+  border-radius: 50%;
 }
 
 /* line 1, ../../_dev/scss/components/_header.scss */
