@@ -2,7 +2,7 @@ module.exports = {
   imagemin: {
           files: [{
               expand: true,
-              cwd: 'build/images/',
+              cwd: '_dev/images/',
               src: ['**/*.{png,jpg,gif}'],
               dest: 'build/images/'
           }]
