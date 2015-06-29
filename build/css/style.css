@@ -517,15 +517,15 @@ h1.titulo span {
   /* line 11, ../../_dev/scss/components/_header.scss */
   h1.titulo {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 22px;
-    font-size: calculateRem(22px);
+    font-size: 20px;
+    font-size: calculateRem(20px);
     font-weight: 400;
   }
   /* line 27, ../../_dev/scss/components/_header.scss */
   h1.titulo span {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
-    font-size: calculateRem(20px);
+    font-size: 18px;
+    font-size: calculateRem(18px);
     font-weight: 300;
   }
 }

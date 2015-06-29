@@ -23,9 +23,9 @@ h1.titulo{
    }
 
   @include breakpoint(baby-bear) {
-      @include source-sans(400, 22px);
+      @include source-sans(400, 20px);
     span{
-      @include source-sans(300, 20px);
+      @include source-sans(300, 18px);
     }
   }
 
