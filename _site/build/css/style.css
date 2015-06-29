@@ -249,6 +249,27 @@ body {
 }
 
 /* line 33, ../../_dev/scss/misc/_type.scss */
+p {
+  padding: 15px 0 0 0;
+}
+
+/* line 37, ../../_dev/scss/misc/_type.scss */
+p:last-child {
+  padding: 15 0 15px 0;
+}
+
+@media (max-width: 570px) {
+  /* line 42, ../../_dev/scss/misc/_type.scss */
+  p {
+    padding: 10px 0 0 0;
+  }
+
+  /* line 46, ../../_dev/scss/misc/_type.scss */
+  p:last-child {
+    padding: 10 0 10px 0;
+  }
+}
+/* line 52, ../../_dev/scss/misc/_type.scss */
 a, a:hover, a:active, a:visited {
   text-decoration: none;
   color: #939598;
@@ -614,7 +635,7 @@ footer {
   width: 85%;
   margin: 15px auto 0 auto;
   padding: 15px 0;
-  border-top: 2px #939598 solid;
+  border-top: 2px solid #d4d5d6;
 }
 
 /* line 8, ../../_dev/scss/components/_footer.scss */
